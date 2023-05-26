@@ -1,0 +1,38 @@
+RESTAURANT LISTING APP
+   
+   REACT USING API
+
+1. create a project -npx create-react-app RESTAURANT-listing-app
+2. In vs code terminal -npm start
+3. Remove unwanted files
+4. install react bootstrap
+5. select template from bootswatch
+6. download it and paste it into src file
+7. Create components - Header and footer(design)
+8. Create Home component - Restlist(complete array of data from restaurant.json )
+9. Create a component - Displaying array oof data -Restcard(displaying array of card format)
+10. Redirection-view a restaurant
+11. create a component-Viewrest
+    
+    ROUTING
+
+12. Install react router dom -npm install --save react-router-dom
+13. import into app.js
+   import { BrowserRouter as Router ,Routes,Route} from 'react-router-dom';
+   Route-for setup path or component
+   Routes- for holding all route path tag
+   Router- holding routes
+14. useParams(hooks)-Returns an object of key/value pairs of the dynamic params from the current URL that were matched by the route path.   
+15. Create a component -Restop - For displaying the opening time
+16. Create a component - Restreview- for displaying reviews
+   
+   REDUX - to manage state also inorder to avoid props drilling
+
+17. install redux library -npm i redux react-redux redux-thunk
+
+        1. create a store file -src/store.js (to hold updated states)
+        2. create action - src/actions/restlistAction.js(logic-to fetch data from an API)
+          1. to fetch data here we use axios -npm i axios
+        3. create constants folder -src/constants/restconstant.js
+        4. create reducer folder -src/reducer/restreducer.js
+        
